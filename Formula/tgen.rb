@@ -5,11 +5,11 @@
 class Tgen < Formula
   desc "Simple tool for creating CSV target files"
   homepage "https://github.com/bxxf/tgen"
-  version "0.1.11"
+  version "0.1.12"
 
   on_macos do
-    url "https://github.com/bxxf/tgen/releases/download/v0.1.11/tgen_0.1.11_darwin_all.tar.gz"
-    sha256 "b0bad60687bfa3ffedf7ed73e6426d245eaa92c1d86a786ec44027d9d77364dd"
+    url "https://github.com/bxxf/tgen/releases/download/v0.1.12/tgen_0.1.12_darwin_all.tar.gz"
+    sha256 "ff58fc90db63637a4df7926c8ae3c3284ea8b02cd76118247f90d4daeaded8a2"
 
     def install
       bin.install "tgen"
@@ -18,16 +18,16 @@ class Tgen < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/bxxf/tgen/releases/download/v0.1.11/tgen_0.1.11_linux_amd64.tar.gz"
-      sha256 "015357445158cd1cca31a146e5877d67cd5cb053fd9c0978d589d914385fb46d"
+      url "https://github.com/bxxf/tgen/releases/download/v0.1.12/tgen_0.1.12_linux_amd64.tar.gz"
+      sha256 "6a620a97298b73b7174f48bcfdf7a3308af2ed98e53f8f3a532aaf4d3d744389"
 
       def install
         bin.install "tgen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bxxf/tgen/releases/download/v0.1.11/tgen_0.1.11_linux_arm64.tar.gz"
-      sha256 "faaa1e2d99b2167eaa94dece84c3bef7890b4d4bd36810199156df3bf6bd6704"
+      url "https://github.com/bxxf/tgen/releases/download/v0.1.12/tgen_0.1.12_linux_arm64.tar.gz"
+      sha256 "900b6cca7e0fb695efcbd5831944a62ba721dc2d5a8c68ce2b002f1363482267"
 
       def install
         bin.install "tgen"
